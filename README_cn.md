@@ -1,8 +1,8 @@
 # CStore
-CStore is a open-source **Graph-Native** storage engine designed for graph based OLAP(Online Analytics Processing) scenario.
+CStore是一款开源的图原生存储引擎，不同于传统key-value存储引擎，CStore内存和磁盘存储结构基于图语义设计，尤其对于AP场景，能够提供高吞吐，低延迟查询能力。
 
-## Quick Start
-### Build Prerequisites
+## 快速开始
+### 环境准备
 ```shell
 # install rust.
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
@@ -12,14 +12,17 @@ rustup update && rustup toolchain install nightly && rustc --version
 yum install make gcc gcc-c++ protobuf-devel protobuf clang
 ```
 
-### Build from Source
-The project support building out of box.
+### 构建项目
+执行以下命令编译 Geaflow-CStore 源代码：
+
 ```shell
 make build
 ```
 
-## Develop
-Please use "make help" to get more dev information.
+### 开发支持
+
+执行 `make help`，查看 makefile 提供的功能，当前版本的功能和对应描述如下：
+
 ```shell
 geaflow-cstore 0.1.0
 Usage: make <target>
